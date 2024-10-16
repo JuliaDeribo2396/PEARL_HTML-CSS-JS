@@ -1,0 +1,12 @@
+@media (min-width: 1000px) {
+
+    .item .item_main .item_img img {
+        height: 600px;
+    }
+
+    .item .item_description,
+    .item .item_description_one p,
+    .item .item_description_one ul {
+        font-size: 17px;
+    }
+}

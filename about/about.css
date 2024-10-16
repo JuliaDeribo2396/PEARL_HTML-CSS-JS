@@ -1,0 +1,39 @@
+.about_us {
+    padding: 0 1em;
+    text-align: left;
+}
+
+.about_us_desc {
+    padding-left: 7%;
+}
+
+.about_us h1 {
+    font-size: 35px;
+}
+
+.about_us h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.about_us p {
+    font-size: 17px;
+}
+
+.about_us img {
+    width: 60%;
+}
+
+@media (min-width: 1000px) {
+    .about_us {
+        padding: 0 7em;
+    }
+
+    .about_us_desc {
+        padding-left: 15%;
+    }
+
+    .about_us p {
+        padding: 0 10% 0 0;
+    }
+}

@@ -1,0 +1,46 @@
+.contact {
+    padding: 0 1em;
+}
+
+.contact h1 {
+    font-size: 30px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .contact {
+        padding: 0 7em;
+    }
+
+    .container {
+        width: 70%;
+        margin-left: 15%;
+    }
+}

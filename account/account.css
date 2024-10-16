@@ -1,0 +1,99 @@
+.account {
+    padding: 0 1em;
+}
+
+.account h1 {
+    font-size: 30px;
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #534e4e;
+    color: white;
+    border-radius: 5px;
+}
+
+.tabs label {
+    flex-grow: 1;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+
+}
+
+#login:checked ~ .tabs .register_white {
+    background-color: #534e4e;
+} 
+
+#register:checked ~ .tabs .login_white {
+    background-color: #534e4e;
+} 
+
+#login:checked ~.tab-content .login-form {
+    display: block;
+}
+
+#register:checked ~ .tab-content .register-form {
+    display: block;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.login-form {
+    display: none;
+}
+
+.register-form {
+    display: none;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+}
+
+
+@media (min-width: 1000px) {
+    .account {
+        padding: 0 7em;
+    }
+
+    .grid_account {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .user{
+        grid-column: 2/3;
+    }
+}

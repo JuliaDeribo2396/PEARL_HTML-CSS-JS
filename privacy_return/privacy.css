@@ -1,0 +1,31 @@
+.privacy {
+    padding: 0 1em;
+    text-align: left;
+}
+
+.privacy_policy {
+    padding-left: 7%;
+}
+
+.privacy h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.privacy p {
+    font-size: 19px;
+}
+
+@media (min-width: 1000px) {
+    .about_us {
+        padding: 0 7em;
+    }
+
+    .about_us_desc {
+        padding-left: 15%;
+    }
+
+    .about_us p {
+        padding: 0 10% 0 0;
+    }
+}

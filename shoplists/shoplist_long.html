@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pearl_main_style.css">
+    <link rel="stylesheet" href="pearl_shoplist.css">
+    <script src="https://kit.fontawesome.com/7073415ba6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/logo-cop.png">
+    <title>PEARL</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="header-nav">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-union">
+            <div class="nav-title">
+              <a href="../pearl_main.html">PEARL</a>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check" id="label_one">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+    
+            <div class="header-nav-icons">
+              <a href="../account/account.html"><i class="fa-regular fa-user"></i></a>
+              <a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="shoplist_sea.htm">New</a></li>
+            <li><a href="../pearl_collection.html">Candles</a></li>
+            <li><a href="shoplist_plaster.html">Plaster</a></li>
+            <li><a href="../classes.html">Classes</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../about/about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <main>
+      <section class="collection-sea">
+        <div class="collection-sea-left">
+            <h1>Long Collection</h1>
+            <div class="inputs-main">
+              <div class="search">
+                <input type="text" name="search" maxlength="25" placeholder="Search...">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+              <div class="sea-sort">
+                <label for="sort">Sort by:</label>
+                <select id="sort" class="sort-select">
+                  <option value="price-asc">Price: Low to Hight</option>
+                  <option value="price-desc">Price: Hight to Low</option>
+                  <option value="rating">Newest</option>
+                </select>
+              </div>
+              <div class="filter">
+                <div class="range-slider">
+                  <div class="slider-track"></div>
+                  <input type="range" id="min-price" min="0" max="30" value="0" step="1">
+                  <input type="range" id="max-price" min="0" max="30" value="30" step="1">
+                </div>
+                <div class="price">
+                  <span class="price-display">Price: <span id="price-range-display">&#36;1 - &#36;30</span>
+                </span>
+                  <span class="filter-display">Filter</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="collection-sea-right">
+            <div class="sea grid_shoplist" id="sea">
+                <div class="sea-product" data-price="3" data-rating="7">
+                  <a href="../items/long_item/long_item1.html"><img src="../images/long5.jpg" alt="candle"></a>
+                    <p>Normal Candle</p>
+                    <p>3&#36;</p>
+                </div>
+                <div class="sea-product" data-price="6" data-rating="2">
+                  <a href="../items/long_item/long_item2.html"><img src="../images/long11.jpg" alt="candle"></a>
+                    <p>Ribbed Thick Candle</p>
+                    <p>6&#36;</p>
+                </div>
+                <div class="sea-product" data-price="9" data-rating="4">
+                  <a href="../items/long_item/long_item3.html"><img src="../images/long.jpg" alt="candle"></a>
+                  <p>Figured Candlestick</p>
+                  <p>9&#36;</p>
+                </div>
+                <div class="sea-product" data-price="7" data-rating="5">
+                  <a href="../items/long_item/long_item4.html"><img src="../images/long6.jpg" alt="candle"></a>
+                    <p>Figured Candle</p>
+                    <p>7&#36;</p>
+                  </div>
+               <div class="sea-product" data-price="6" data-rating="6">
+                <a href="../items/long_item/long_item5.html"><img src="../images/long4.jpg" alt="candle"></a>
+                    <p>Ribbed Thin Candle</p>
+                    <p>6&#36;</p>
+                </div>
+                <div class="sea-product" data-price="4" data-rating="3">
+                  <a href="../items/long_item/long_item6.html"><img src="../images/height4.jpg" alt="candle"></a>
+                    <p>Candle Chamomile</p>
+                    <p>4&#36;</p>
+                </div>
+                <div class="sea-product" data-price="4" data-rating="8">
+                    <a href="../items/long_item/long_item7.html"><img src="../images/height.jpg" alt="candle"></a>
+                      <p>Candle Flower</p>
+                      <p>4&#36;</p>
+                  </div>
+                  <div class="sea-product" data-price="3" data-rating="1">
+                    <a href="../items/long_item/long_item8.html"><img src="../images/height3.jpg" alt="candle"></a>
+                      <p>Candle Gradient</p>
+                      <p>3&#36;</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+      </main>
+
+    <footer class="footer grid" id="footer">
+        <div class="footer-container">
+          <div class="footer-container-main">
+            <div class="container-main">
+              <div class="main-menu">
+                <h5>Menu</h5>
+                <a href="shoplist_sea.htm">Limited edition</a>
+                <a href="shoplist_plaster.html">Plaster products</a>
+                <a href="../pearl_collection.html">All products</a>
+                <a href="../classes.html">Classes</a>
+              </div>
+              <div class="main-categories">
+                <h5>Collections</h5>
+                <a href="shoplist_figure.html">Figured candles</a>
+                <a href="shoplist_long.html">Long candles</a>
+                <a href="shoplist_peony.html">Peony candles</a>
+                <a href="shoplist_c_plaster.html">Candles in plaster</a>
+              </div>
+              <div class="main-company">
+                <h5>Our company</h5>
+                <a href="../about/about.html">About us</a>
+                <a href="../privacy_return/privacy.html">Privacy</a>
+                <a href="../privacy_return/return.html">Returns policy</a>
+                <a href="../contact/contact.html">Contact us</a>
+              </div>
+            </div>
+            <div class="main-join-list">
+              <h5>Join our mailing list</h5>
+              <form action="../account/account.html">
+                <input class="join-list-input" type="text" id="list" pattern=".*\.(com|ru|by|net)$"
+                  placeholder="your@email.com" />
+                <input type="submit" id="button_footer" value="Sign up" />
+              </form>
+            </div>
+          </div>
+          <hr>
+          <div class="footer-two">
+            <div class="footer-icons">
+              <a target="_blank" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+              <a target="_blank" href="https://www.facebook.com/?locale=ru_RU"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
+              <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a target="_blank" href="https://www.skype.com/ru/"><i class="fa-brands fa-skype fa-lg"></i></a>
+              <a target="_blank" href="https://x.com/?lang=ru&lang=ru"><i class="fa-brands fa-twitter fa-lg"></i></a>
+              <a target="_blank" href="https://ru.pinterest.com/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+            </div>
+            <div class="footer-container-copyright">
+              <p>Coopyright &#169;2024 PEARL | This template is made with &#128156; by Deribo</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="pearl_shoplist.js"></script>
+</body>
+</html>
